@@ -955,7 +955,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .blog-banner-box { height: auto; }
 
 }
-
+.sidebar.active { max-height: 584px; }
 
 
 
