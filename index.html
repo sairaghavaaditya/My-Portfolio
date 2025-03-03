@@ -399,12 +399,29 @@
   </div>
 
   <ul class="achievements-list">
-    <li class="achievement-item">🏆 Smart India Hackathon 2024 National Finalist</li>
-    <li class="achievement-item">🥇  NPTEL ”Data Structures And Algorithms Using Java” recognized by Top 2 % with Elite Silver”</li>
-    <li class="achievement-item">🎖️ Certified Salesforce Ai Associate</li>
+    <li class="achievement-item">
+      <p class="achievement-text">🏆 Smart India Hackathon 2024 National Finalist</p>
+      <div class="proof">
+        <img src="./assets/images/sih.jpg" alt="Smart India Hackathon Certificate">
+      </div>
+    </li>
 
+    <li class="achievement-item">
+      <p class="achievement-text">🥇 NPTEL "Data Structures And Algorithms Using Java" recognized by Top 2% with Elite Silver</p>
+      <div class="proof">
+        <img src="./assets/images/javadsanptel.png" alt="NPTEL Certificate">
+      </div>
+    </li>
+
+    <!-- <li class="achievement-item">
+      <p class="achievement-text">🎖️ Certified Salesforce AI Associate</p>
+      <div class="proof">
+        <img src="images/salesforce_certificate.jpg" alt="Salesforce AI Associate Certificate">
+      </div>
+    </li> -->
   </ul>
 </section>
+
  
         
 
@@ -426,26 +443,7 @@
 
         <section class="projects">
 
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <!-- <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li> -->
-
-          </ul>
-
+          
           <div class="filter-select-box">
 
             <button class="filter-select" data-select>
@@ -482,6 +480,7 @@
 
           <ul class="project-list">
 
+            <!-- AI Interview Simulation -->
             <li class="project-item active" data-filter-item data-category="ai">
               <a href="#">
                 <figure class="project-img">
@@ -493,10 +492,31 @@
                 <h3 class="project-title">Web-Based Selector-Applicant Simulation Software</h3>
                 <p class="project-category">AI / Interview Simulation</p>
               </a>
+              <div class="project-links">
+                <!-- <a href="https://github.com/yourusername/recruit-smart" target="_blank" class="btn github-btn">GitHub</a> -->
+                <a href="https://drive.google.com/drive/folders/1_0OoTjz-ZNERZskc04WR9EUvGgAx1BJ3?usp=drive_link" target="_blank" class="btn drive-btn">Documents</a>
+              </div>
+              <div class="project-description">
+                <p>
+                  RecruitSmart is an AI-powered interview simulation platform designed to evaluate candidates objectively by simulating a real-life boardroom interview experience. The system generates dynamic, role-specific questions, evaluates responses using NLP-based scoring, and provides instant feedback on candidate suitability.
+                </p>
+                <p style="color: gold;">Tech Stack:</p>
+                <ol>
+                  <li>🔹Python, Django, React.js, NLP, AI</li>
+                </ol>
+                <p style="color: gold;">Key Features:</p>
+                <ol>
+                  <li>🔹AI-Driven Interview Process – Generates dynamic and relevant questions for candidates..</li>
+                  <li>🔹Automated Scoring Mechanism – Uses NLP algorithms to evaluate responses and determine suitability.</li>
+                  <li>🔹Full-Stack Implementation – Built with Django (backend) and React.js (frontend) for seamless user interaction.</li>
+                  <li>🔹Unbiased Candidate Assessment – Provides real-time feedback and eliminates manual bias in recruitment.</li>
+                  <li>User-Friendly Interface – Interactive web platform for both candidates and recruiters.</li>
+                </ol>
+                
+              </div>
+              
             </li>
-
-
-
+          
             <!-- Face Emotion Detection and Recognition -->
             <li class="project-item active" data-filter-item data-category="machine learning">
               <a href="#">
@@ -509,29 +529,32 @@
                 <h3 class="project-title">Face Emotion Detection & Recognition</h3>
                 <p class="project-category">Machine Learning</p>
               </a>
+              <div class="project-links">
+                <!-- <a href="https://github.com/yourusername/face-emotion" target="_blank" class="btn github-btn">GitHub</a> -->
+                <a href="https://drive.google.com/drive/folders/1rl6F1i7MmkvCs7YrsIhYEhT48DbmcBxj?usp=drive_link" target="_blank" class="btn drive-btn">Documents</a>
+              </div>
+              <div class="project-description">
+                <p>
+                  This real-time emotion recognition system leverages Convolutional Neural Networks (CNNs) to detect facial expressions and classify emotions. Integrated with a Django web application, it enables accurate human-computer interaction, making it useful for applications like mental health monitoring, customer sentiment analysis, and security surveillance.
+                </p>
+                <p style="color: gold;">Tech Stack:</p>
+                <ol>
+                  <li>🔹Python, TensorFlow/Keras, OpenCV, Django</li>
+                </ol>
+                <p style="color: gold;">Key Features:</p>
+                <ul>
+                  <li>🔹Deep Learning for Emotion Detection – Uses CNN-based models for accurate facial expression recognition.</li>
+                  <li>🔹Real-Time Emotion Analysis – Processes live webcam feed to classify emotions like happy, sad, angry, etc.</li>
+                  <li>🔹Django Integration – Provides a user-friendly, interactive web interface.</li>
+                  <li>🔹Practical Applications – Useful for mental health tracking, customer service, and security</li>
+                  <li>🔹Seamless Deployment – Optimized for real-time processing in web applications.</li>
+                </ul>
+              </div>
+              
             </li>
-
-            <!-- <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li> -->
-
-           
-
+          
           </ul>
+          
 
         </section>
 

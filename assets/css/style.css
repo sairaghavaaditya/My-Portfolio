@@ -631,17 +631,15 @@ main {
 }
 
 
-/* Skills & Achievements Sections */
-.skills-list,
-.achievements-list {
+/* Skills Sections */
+.skills-list{
   font-size: var(--fs-6);
   margin-left: 45px;
   list-style-type: none;
   padding-left: 0;
 }
 
-.skill-item,
-.achievement-item {
+.skill-item{
   display: flex;
   align-items: center;
   gap: 10px;
@@ -657,6 +655,46 @@ main {
   color: var(--text-gradient-yellow);
 }
 
+
+/*Achievements Sections*/
+/* Achievements Section Styling */
+.achievements-list {
+  list-style: none;
+  padding: 0;
+  text-align: center; /* Centers text */
+}
+
+.achievement-item {
+  margin-bottom: 40px; /* Adds spacing between achievements */
+}
+
+.achievement-text {
+  font-size: 1rem; /* Larger text */
+  font-weight: bold;
+  color: var(--light-gray);
+  margin-bottom: 15px;
+}
+
+/* Centering the Image */
+.proof {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  width: 100%;
+}
+
+.proof img {
+  width: 85%; /* Makes the image large and responsive */
+  max-width: 600px; /* Limits max size */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.proof img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
 
 
 
@@ -727,10 +765,15 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
+  padding: 0;
   margin-bottom: 10px;
 }
 
-.project-item { display: none; }
+.project-item { 
+  display: none;
+  
+
+ }
 
 .project-item.active {
   display: block;
@@ -815,6 +858,53 @@ main {
   color: var(--light-gray-70);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
+}
+
+
+.project-description {
+  background: var(--eerie-black-2);
+  padding: 15px;
+  border-radius: 10px;
+  color: var(--light-gray);
+  text-align: left;
+  margin-top: 10px;
+  font-size: 1rem;
+  line-height: 1.6; /* Improves readability */
+  min-height: 180px; /* Prevents cutting off text */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-description ul {
+  padding-left: 20px;
+}
+
+.project-description ul li {
+  margin-bottom: 5px;
+}
+
+/* Project Links */
+.project-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.project-links .btn {
+  background: var(--jet);
+  color: var(--light-gray);
+  padding: 8px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: var(--fs-6);
+  transition: 0.3s ease-in-out;
+}
+
+.project-links .btn:hover {
+  background: var(--orange-yellow-crayola);
+  color: var(--white-2);
 }
 
 
@@ -1448,7 +1538,7 @@ textarea.form-input::-webkit-resizer { display: none; }
    * PORTFOLIO
    */
 
-  .project-list { grid-template-columns: repeat(3, 1fr); }
+  .project-list { grid-template-columns: repeat(2, 1fr); }
 
 
 
